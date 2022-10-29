@@ -23,6 +23,12 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
+                    <strong>Teacher Name</strong>
+                    {{ $student->teacher->name }}
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
                     <strong>Roll No:</strong>
                     {{ $student->roll_no }}
                 </div>
