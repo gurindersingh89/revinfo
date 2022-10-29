@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::resource('teachers', App\Http\Controllers\TeacherController::class);
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });

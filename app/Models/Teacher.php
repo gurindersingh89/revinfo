@@ -11,7 +11,8 @@ class Teacher extends Model
     use HasFactory, SoftDeletes;
 
     public $fillable = [
-        'name'
+        'name',
+        'image'
     ];
 
     public function students()
