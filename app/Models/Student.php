@@ -12,7 +12,8 @@ class Student extends Model
 
     public $fillable = [
         'roll_no',
-        'name'
+        'name',
+        'teacher_id'
     ];
 
     public function teacher()

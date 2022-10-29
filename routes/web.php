@@ -13,7 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+# teachers routes
 Route::resource('teachers', App\Http\Controllers\TeacherController::class);
+
+# students routes
+Route::resource('students', App\Http\Controllers\StudentController::class);
 
 Route::get('/', function () {
     return view('home');

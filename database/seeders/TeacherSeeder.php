@@ -17,7 +17,7 @@ class TeacherSeeder extends Seeder
     {
         Teacher::factory()
             ->count(20)
-            ->hasStudents(5)
+            ->hasStudents(2)
             ->create();
     }
 }

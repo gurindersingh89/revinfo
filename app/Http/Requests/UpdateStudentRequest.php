@@ -13,7 +13,7 @@ class UpdateStudentRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,9 @@ class UpdateStudentRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'teacher_id' => ['required', 'exists:teachers,id'],
+            'name' => ['required'],
+            'roll_no' => ['integer', 'gt:0']
         ];
     }
 }
